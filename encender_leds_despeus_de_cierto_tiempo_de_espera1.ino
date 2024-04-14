@@ -18,7 +18,7 @@ void loop()
 {
   ta = millis();
   if(!retardo_R){//aqui deben de ser 10 segundos
-    if((ta-tir)>=2000){
+    if((ta-tir)>=10000){
       tir = ta;
       retardo_R = !retardo_R;
     }
