@@ -1,15 +1,16 @@
-#define LED 2 // Pin del LED
-#define BOTON 3 // Pin del botón
+#define LED 2
+#define BOTON 3
 
 void setup(){
-    pinMode(LED, OUTPUT); // Configura el pin del LED como salida
-    pinMode(BOTON, INPUT); // Configura el pin del botón como entrada
+  pinMode(LED,OUTPUT);
+  pinMode(BOTON,INPUT);
+  
 }
-
 void loop(){
-    if(digitalRead(BOTON) == HIGH){ // Lee el estado del botón
-        digitalWrite(LED, HIGH); // Si el botón está presionado, enciende el LED
-    }else{
-        digitalWrite(LED, LOW); // Si el botón no está presionado, apaga el LED
-    }
+  if(digitalRead(BOTON)==HIGH){
+      digitalWrite(LED,HIGH); 
+  }else{
+      digitalWrite(LED, LOW);
+  }
+  
 }
